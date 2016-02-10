@@ -24,7 +24,7 @@
 @section('footer')
  <script>
   //build connection
-  var conn = new WebSocket('ws://localhost:8080');
+  var conn = new WebSocket('ws://127.0.0.1:8080');
   conn.onopen = function(e) {
    console.log("Connection established!");
   };

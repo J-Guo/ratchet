@@ -24,7 +24,11 @@
 @section('footer')
  <script>
   //build connection
-  var conn = new WebSocket('ws://127.0.0.1:8080');
+ // var conn = new WebSocket('ws://127.0.0.1:8080'); //development ip
+  var conn = new WebSocket('ws://52.63.32.126:8080');  //product ip
+
+
+
   conn.onopen = function(e) {
    console.log("Connection established!");
   };
